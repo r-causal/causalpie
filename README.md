@@ -3,6 +3,12 @@
 
 # causalpie: An R Package for easily creating and visualizing causal pies
 
+<!-- badges: start -->
+
+[![R-universe
+version](https://r-causal.r-universe.dev/causalpie/badges/version)](https://r-causal.r-universe.dev/causalpie)
+<!-- badges: end -->
+
 `causalpie` is an R package for creating tidy sufficient-component
 causal models. Create and analyze sufficient causes and plot them easily
 in `ggplot2`.
@@ -15,7 +21,18 @@ You can install causalpie from CRAN with:
 install.packages("causalpie")
 ```
 
-You can install the development version of `causalpie` from GitHub with:
+You can install the development version of causalpie from
+[r-causal.r-universe.dev](https://r-causal.r-universe.dev/) with:
+
+``` r
+install.packages(
+  "causalpie",
+  repos = c("https://r-causal.r-universe.dev", getOption("repos"))
+)
+```
+
+You can also install the development version of causalpie from source
+from [GitHub](https://github.com/r-causal/causalpie) with:
 
 ``` r
 # install.packages("pak")
