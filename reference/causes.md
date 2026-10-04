@@ -28,6 +28,7 @@ causify(..., add_u = TRUE)
 ## Examples
 
 ``` r
+
 causify(sc(A = 1, B = 0), sc(A = 1, E = 1, C = 0))
 #> # A tibble: 7 × 5
 #>   component value label  frac cause             

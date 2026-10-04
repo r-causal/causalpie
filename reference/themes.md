@@ -33,6 +33,7 @@ object
 ## Examples
 
 ``` r
+
 causify(sc(A = 1, B = 0), sc(A = 1, E = 1, C = 0)) |>
   causal_pie_necessary() +
   theme_causal_pie()

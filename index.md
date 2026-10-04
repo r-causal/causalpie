@@ -9,12 +9,26 @@ in `ggplot2`.
 You can install causalpie from CRAN with:
 
 ``` r
+
 install.packages("causalpie")
 ```
 
-You can install the development version of `causalpie` from GitHub with:
+You can install the development version of causalpie from
+[r-causal.r-universe.dev](https://r-causal.r-universe.dev/) with:
 
 ``` r
+
+install.packages(
+  "causalpie",
+  repos = c("https://r-causal.r-universe.dev", getOption("repos"))
+)
+```
+
+You can also install the development version of causalpie from source
+from [GitHub](https://github.com/r-causal/causalpie) with:
+
+``` r
+
 # install.packages("pak")
 pak::pak("r-causal/causalpie")
 ```
@@ -48,6 +62,7 @@ component `U` is added to each sufficient cause to represent unknown
 components. This can be turned off by setting `add_u = FALSE`.
 
 ``` r
+
 library(causalpie)
 causes <- causify(sc(A = 0, B = 1),
                   sc(A = 0, E = 1),
@@ -74,6 +89,7 @@ which highlights unique components, or
 which highlights necessary causes.
 
 ``` r
+
 causal_pie(causes)
 ```
 
@@ -83,6 +99,7 @@ Because both objects are ggplots, you can change themes, scales, and so
 on.
 
 ``` r
+
 library(ggplot2)
 causify(sc(A = 1, B = 0), sc(A = 1, E = 1, C = 0)) |>
   causal_pie_necessary() +

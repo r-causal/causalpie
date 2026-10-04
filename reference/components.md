@@ -29,6 +29,7 @@ a character vector
 ## Examples
 
 ``` r
+
 causes <- causify(sc(A = 1, B = 0), sc(A = 1, E = 1, C = 0))
 
 components(causes)
